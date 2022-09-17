@@ -9,8 +9,9 @@ import Foundation
 import UserNotifications
 
 public class AppNotifications: ObservableObject {
-    @Published var scheduledNotifications = []
+    @Published var scheduledNotifications = [ScheduledNotification]()
     
+    @MainActor
     public func ScheduleNotification(timeFromNow: Double, message: String, name: String, type: NotificationType) {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
@@ -38,12 +39,14 @@ public class AppNotifications: ObservableObject {
                 
                 // add our notification request
                 UNUserNotificationCenter.current().add(request)
+                self.LogNotification(id: notificationID, content: content, event: name, timeFromNow: timeFromNow, type: type, unit: .seconds)
             } else if let error = error {
                 print(error.localizedDescription)
             }
         }
     }
     
+    @MainActor
     public func HandleFormSubmission(eventTitle: String, delayTime: Double, enableUpcoming: Bool) {
         if(enableUpcoming) {
             if(delayTime - 10 > 0) {
@@ -57,12 +60,14 @@ public class AppNotifications: ObservableObject {
         ScheduleNotification(timeFromNow: delayTime, message: "Congratulations on \(delayTime) seconds!", name: eventTitle, type: .now)
     }
 
+    @MainActor
     public func LogNotification(id: String, content: UNNotificationContent, event: String, timeFromNow: Double, type: NotificationType, unit: NotificationUnit) {
         let calendar = Calendar.current
-        var notificationDate = calendar.date(byAdding: .second, value: Int(timeFromNow), to: Date.now)
+        let notificationDate = calendar.date(byAdding: .second, value: Int(timeFromNow), to: Date.now)
         
-        if let notificationDate {
+        if let notificationDate = notificationDate {
             self.scheduledNotifications.append(ScheduledNotification(id: id, event: event, scheduledDate: notificationDate, type: type, unit: unit))
+            print("logged notification")
         }
     }
 }

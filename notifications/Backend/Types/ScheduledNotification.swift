@@ -7,11 +7,11 @@
 
 import Foundation
 
-public struct ScheduledNotification {
-    var id: String
-    var eventID: String?
-    var event: String
-    var scheduledDate: Date
-    var type: NotificationType
-    var unit: NotificationUnit
+public struct ScheduledNotification: Identifiable {
+    public var id: String
+    public var eventID: String?
+    public var event: String
+    public var scheduledDate: Date
+    public var type: NotificationType
+    public var unit: NotificationUnit
 }
