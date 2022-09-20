@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3312F55328D98471007F9900 /* NotificationDevTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312F55228D98471007F9900 /* NotificationDevTest.swift */; };
+		3312F55528D98477007F9900 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312F55428D98477007F9900 /* Settings.swift */; };
 		336A449528D57EEC0054B3B3 /* notificationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A449428D57EEC0054B3B3 /* notificationsApp.swift */; };
 		336A449728D57EEC0054B3B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A449628D57EEC0054B3B3 /* ContentView.swift */; };
 		336A449928D57EED0054B3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336A449828D57EED0054B3B3 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3312F55228D98471007F9900 /* NotificationDevTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDevTest.swift; sourceTree = "<group>"; };
+		3312F55428D98477007F9900 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		336A449128D57EEC0054B3B3 /* notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336A449428D57EEC0054B3B3 /* notificationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsApp.swift; sourceTree = "<group>"; };
 		336A449628D57EEC0054B3B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3312F55128D98456007F9900 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3312F55228D98471007F9900 /* NotificationDevTest.swift */,
+				3312F55428D98477007F9900 /* Settings.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		336A448828D57EEC0054B3B3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		336A449328D57EEC0054B3B3 /* notifications */ = {
 			isa = PBXGroup;
 			children = (
+				3312F55128D98456007F9900 /* Pages */,
 				336A44A528D580BA0054B3B3 /* Info.plist */,
 				336A44A228D57F000054B3B3 /* Backend */,
 				336A449428D57EEC0054B3B3 /* notificationsApp.swift */,
@@ -168,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				336A44B328D589230054B3B3 /* ScheduledNotification.swift in Sources */,
+				3312F55328D98471007F9900 /* NotificationDevTest.swift in Sources */,
+				3312F55528D98477007F9900 /* Settings.swift in Sources */,
 				336A44B128D589160054B3B3 /* NotificationUnit.swift in Sources */,
 				336A44AF28D589020054B3B3 /* NotificationType.swift in Sources */,
 				336A44AC28D5882E0054B3B3 /* AppNotifications.swift in Sources */,
@@ -310,7 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -27,14 +27,18 @@ class AppDelegate : UIResponder, UIApplicationDelegate, UNUserNotificationCenter
     func applicationDidFinishLaunching(_ application: UIApplication) {
         UNUserNotificationCenter.current().delegate = self
     }
-    
 }
 
 @main
 struct notificationsApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView() {
+            NavigationSplitView {
+                List() {
+                    NavigationLink("Notifications Dev", destination: NotificationDevTest())
+                    NavigationLink("Settings", destination: SettingsPage())
+                }.navigationTitle("Notifications Main").padding(.top)
+            } detail: {
                 ContentView()
             }
         }
