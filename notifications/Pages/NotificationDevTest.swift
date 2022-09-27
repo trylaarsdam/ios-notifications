@@ -45,7 +45,7 @@ struct NotificationDevTest: View {
                         if(notification.scheduledDate > Date.now) {
                             Text(notification.id)
                         } else {
-                            Text("Expired: \(notification.id)")
+                            Text("Occurred: \(notification.id)")
                         }
                     }
                 }

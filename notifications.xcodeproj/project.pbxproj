@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3312F55328D98471007F9900 /* NotificationDevTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312F55228D98471007F9900 /* NotificationDevTest.swift */; };
 		3312F55528D98477007F9900 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312F55428D98477007F9900 /* Settings.swift */; };
+		3312F55928E2B9B4007F9900 /* CalculateDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3312F55828E2B9B4007F9900 /* CalculateDates.swift */; };
 		336A449528D57EEC0054B3B3 /* notificationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A449428D57EEC0054B3B3 /* notificationsApp.swift */; };
 		336A449728D57EEC0054B3B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A449628D57EEC0054B3B3 /* ContentView.swift */; };
 		336A449928D57EED0054B3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336A449828D57EED0054B3B3 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3312F55228D98471007F9900 /* NotificationDevTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDevTest.swift; sourceTree = "<group>"; };
 		3312F55428D98477007F9900 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3312F55828E2B9B4007F9900 /* CalculateDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDates.swift; sourceTree = "<group>"; };
 		336A449128D57EEC0054B3B3 /* notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336A449428D57EEC0054B3B3 /* notificationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsApp.swift; sourceTree = "<group>"; };
 		336A449628D57EEC0054B3B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				336A44AD28D588F20054B3B3 /* Types */,
 				336A44AB28D5882E0054B3B3 /* AppNotifications.swift */,
+				3312F55828E2B9B4007F9900 /* CalculateDates.swift */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				336A44B128D589160054B3B3 /* NotificationUnit.swift in Sources */,
 				336A44AF28D589020054B3B3 /* NotificationType.swift in Sources */,
 				336A44AC28D5882E0054B3B3 /* AppNotifications.swift in Sources */,
+				3312F55928E2B9B4007F9900 /* CalculateDates.swift in Sources */,
 				336A449728D57EEC0054B3B3 /* ContentView.swift in Sources */,
 				336A449528D57EEC0054B3B3 /* notificationsApp.swift in Sources */,
 			);
