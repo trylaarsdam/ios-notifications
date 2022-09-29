@@ -17,6 +17,7 @@
 		336A44AF28D589020054B3B3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A44AE28D589020054B3B3 /* NotificationType.swift */; };
 		336A44B128D589160054B3B3 /* NotificationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A44B028D589160054B3B3 /* NotificationUnit.swift */; };
 		336A44B328D589230054B3B3 /* ScheduledNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A44B228D589230054B3B3 /* ScheduledNotification.swift */; };
+		33BDD57F28E559BB00878B3E /* RecurringDateManager in Frameworks */ = {isa = PBXBuildFile; productRef = 33BDD57E28E559BB00878B3E /* RecurringDateManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BDD57F28E559BB00878B3E /* RecurringDateManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +71,7 @@
 				3312F55F28E2BC8E007F9900 /* Packages */,
 				336A449328D57EEC0054B3B3 /* notifications */,
 				336A449228D57EEC0054B3B3 /* Products */,
+				33BDD57D28E559BB00878B3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +124,13 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
+		33BDD57D28E559BB00878B3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +148,7 @@
 			);
 			name = notifications;
 			packageProductDependencies = (
+				33BDD57E28E559BB00878B3E /* RecurringDateManager */,
 			);
 			productName = notifications;
 			productReference = 336A449128D57EEC0054B3B3 /* notifications.app */;
@@ -407,6 +418,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33BDD57E28E559BB00878B3E /* RecurringDateManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RecurringDateManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 336A448928D57EEC0054B3B3 /* Project object */;
 }

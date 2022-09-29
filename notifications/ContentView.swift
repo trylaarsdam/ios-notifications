@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import RecurringDateManager
 
 struct ContentView: View {
     @State var notificationDelayTime: Double = 5
     @State var enableUpcomingNotification: Bool = true
     @State var title = ""
     @State var showNotifications = true
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @StateObject var appNotifications = AppNotifications()
