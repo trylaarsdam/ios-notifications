@@ -18,6 +18,12 @@
 		336A44B128D589160054B3B3 /* NotificationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A44B028D589160054B3B3 /* NotificationUnit.swift */; };
 		336A44B328D589230054B3B3 /* ScheduledNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A44B228D589230054B3B3 /* ScheduledNotification.swift */; };
 		33BDD57F28E559BB00878B3E /* RecurringDateManager in Frameworks */ = {isa = PBXBuildFile; productRef = 33BDD57E28E559BB00878B3E /* RecurringDateManager */; };
+		33BDD58128E55DD500878B3E /* RecurringDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58028E55DD500878B3E /* RecurringDateTests.swift */; };
+		33BDD58428E5608A00878B3E /* EventListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58328E5608A00878B3E /* EventListDemo.swift */; };
+		33BDD58628E5641600878B3E /* RecurringDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58528E5641600878B3E /* RecurringDateList.swift */; };
+		33BDD58828E6AE5200878B3E /* UserDefaultsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */; };
+		33BDD58B28E6B08D00878B3E /* EventsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */; };
+		33BDD58D28E6B09C00878B3E /* QueuedNotificationsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		336A44AE28D589020054B3B3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
 		336A44B028D589160054B3B3 /* NotificationUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUnit.swift; sourceTree = "<group>"; };
 		336A44B228D589230054B3B3 /* ScheduledNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledNotification.swift; sourceTree = "<group>"; };
+		33BDD58028E55DD500878B3E /* RecurringDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringDateTests.swift; sourceTree = "<group>"; };
+		33BDD58328E5608A00878B3E /* EventListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListDemo.swift; sourceTree = "<group>"; };
+		33BDD58528E5641600878B3E /* RecurringDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringDateList.swift; sourceTree = "<group>"; };
+		33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExplorer.swift; sourceTree = "<group>"; };
+		33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsExplorer.swift; sourceTree = "<group>"; };
+		33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedNotificationsExplorer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,8 @@
 			children = (
 				3312F55228D98471007F9900 /* NotificationDevTest.swift */,
 				3312F55428D98477007F9900 /* Settings.swift */,
+				33BDD58928E6B07E00878B3E /* UserDefaultsExplorer */,
+				33BDD58228E5606F00878B3E /* RecurringDateTests */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -129,6 +143,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33BDD58228E5606F00878B3E /* RecurringDateTests */ = {
+			isa = PBXGroup;
+			children = (
+				33BDD58028E55DD500878B3E /* RecurringDateTests.swift */,
+				33BDD58328E5608A00878B3E /* EventListDemo.swift */,
+				33BDD58528E5641600878B3E /* RecurringDateList.swift */,
+			);
+			path = RecurringDateTests;
+			sourceTree = "<group>";
+		};
+		33BDD58928E6B07E00878B3E /* UserDefaultsExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */,
+				33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */,
+				33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */,
+			);
+			path = UserDefaultsExplorer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +243,17 @@
 				336A44B328D589230054B3B3 /* ScheduledNotification.swift in Sources */,
 				3312F55328D98471007F9900 /* NotificationDevTest.swift in Sources */,
 				3312F55528D98477007F9900 /* Settings.swift in Sources */,
+				33BDD58128E55DD500878B3E /* RecurringDateTests.swift in Sources */,
 				336A44B128D589160054B3B3 /* NotificationUnit.swift in Sources */,
+				33BDD58828E6AE5200878B3E /* UserDefaultsExplorer.swift in Sources */,
 				336A44AF28D589020054B3B3 /* NotificationType.swift in Sources */,
 				336A44AC28D5882E0054B3B3 /* AppNotifications.swift in Sources */,
 				336A449728D57EEC0054B3B3 /* ContentView.swift in Sources */,
+				33BDD58628E5641600878B3E /* RecurringDateList.swift in Sources */,
+				33BDD58B28E6B08D00878B3E /* EventsExplorer.swift in Sources */,
 				336A449528D57EEC0054B3B3 /* notificationsApp.swift in Sources */,
+				33BDD58D28E6B09C00878B3E /* QueuedNotificationsExplorer.swift in Sources */,
+				33BDD58428E5608A00878B3E /* EventListDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

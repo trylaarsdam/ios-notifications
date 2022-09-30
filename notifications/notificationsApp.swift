@@ -33,13 +33,13 @@ class AppDelegate : UIResponder, UIApplicationDelegate, UNUserNotificationCenter
 struct notificationsApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationSplitView {
+            NavigationStack {
                 List() {
                     NavigationLink("Notifications Dev", destination: NotificationDevTest())
+                    NavigationLink("Recurring Date Tests", destination: RecurringDateTests())
+                    NavigationLink("User Defaults Explorer", destination: UserDefaultsExplorer())
                     NavigationLink("Settings", destination: SettingsPage())
                 }.navigationTitle("Notifications Main").padding(.top)
-            } detail: {
-                ContentView()
             }
         }
     }
