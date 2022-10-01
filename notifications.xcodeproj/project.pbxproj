@@ -24,6 +24,7 @@
 		33BDD58828E6AE5200878B3E /* UserDefaultsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */; };
 		33BDD58B28E6B08D00878B3E /* EventsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */; };
 		33BDD58D28E6B09C00878B3E /* QueuedNotificationsExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */; };
+		33BDD58F28E80E2E00878B3E /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDD58E28E80E2E00878B3E /* EventEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExplorer.swift; sourceTree = "<group>"; };
 		33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsExplorer.swift; sourceTree = "<group>"; };
 		33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedNotificationsExplorer.swift; sourceTree = "<group>"; };
+		33BDD58E28E80E2E00878B3E /* EventEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				33BDD58728E6AE5200878B3E /* UserDefaultsExplorer.swift */,
 				33BDD58A28E6B08D00878B3E /* EventsExplorer.swift */,
 				33BDD58C28E6B09C00878B3E /* QueuedNotificationsExplorer.swift */,
+				33BDD58E28E80E2E00878B3E /* EventEditor.swift */,
 			);
 			path = UserDefaultsExplorer;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				33BDD58828E6AE5200878B3E /* UserDefaultsExplorer.swift in Sources */,
 				336A44AF28D589020054B3B3 /* NotificationType.swift in Sources */,
 				336A44AC28D5882E0054B3B3 /* AppNotifications.swift in Sources */,
+				33BDD58F28E80E2E00878B3E /* EventEditor.swift in Sources */,
 				336A449728D57EEC0054B3B3 /* ContentView.swift in Sources */,
 				33BDD58628E5641600878B3E /* RecurringDateList.swift in Sources */,
 				33BDD58B28E6B08D00878B3E /* EventsExplorer.swift in Sources */,
