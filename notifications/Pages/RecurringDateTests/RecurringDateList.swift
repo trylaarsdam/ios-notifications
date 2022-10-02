@@ -10,14 +10,14 @@ import RecurringDateManager
 
 struct RecurringDateList: View {
     var eventInterval: EventInterval
-    var dates: [Date]
+    var dates: [(Date, Int)]
     
     var body: some View {
         VStack {
             Text("Event Interval Unit: \(eventInterval.rawValue)")
             List {
-                ForEach(dates, id: \.self) { item in
-                    Text(item.ISO8601Format())
+                ForEach(dates, id:\.0) { item in
+                    Text(item.0.ISO8601Format())
                 }
             }
         }.navigationTitle("Generated Date List")

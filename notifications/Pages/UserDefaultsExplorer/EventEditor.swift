@@ -10,9 +10,17 @@ import RecurringDateManager
 
 struct EventEditor: View {
     var event: RecurringEvent
+    let dateManager = RecurringDateManager()
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         List {
+            Section ("Controls") {
+                Button("Delete Event") {
+                    dateManager.deleteEvent(id: event.id)
+                    presentationMode.wrappedValue.dismiss()
+                }.foregroundColor(.red)
+            }
             Section ("Event ID"){
                 Text(event.id)
             }
@@ -25,7 +33,9 @@ struct EventEditor: View {
                 }
             }
             Section("Scheduled Notifications") {
-                
+                ForEach(dateManager.getNotificationsOfEvent(id: event.id)) { notification in
+                    Text(notification.id)
+                }
             }
         }.navigationTitle(event.name)
     }

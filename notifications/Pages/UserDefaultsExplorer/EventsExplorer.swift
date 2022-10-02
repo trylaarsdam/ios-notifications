@@ -18,17 +18,15 @@ struct EventsExplorer: View {
                     NavigationLink {
                         EventEditor(event: event)
                     } label: {
-                        HStack (alignment: .center){
-                            VStack (alignment: .leading){
-                                Text("\(event.name)").bold()
-                                Text(event.date.ISO8601Format())
-                            }.frame(maxWidth: .infinity)
-                        }
+                        VStack (alignment: .leading){
+                            Text("\(event.name)").bold()
+                            Text(event.date.ISO8601Format())
+                        }.frame(maxWidth: .infinity)
                     }
                 }
             }
             Button("Create Event") {
-                let _ = dateManager.createRecurringEvent(name: "Test Event 1", date: Date.now, enabledIntervals: [.second, .minute, .month])
+                let _ = dateManager.createRecurringEvent(name: "Test Event \(String(Int.random(in: 0..<1000)))", date: Date.now.addingTimeInterval(15), enabledIntervals: [.second, .minute, .month])
                 eventList = dateManager.getEvents()
             }
         }.navigationTitle("Events").onAppear {
