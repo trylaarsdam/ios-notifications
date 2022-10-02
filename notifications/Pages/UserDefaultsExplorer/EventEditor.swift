@@ -34,7 +34,7 @@ struct EventEditor: View {
             }
             Section("Scheduled Notifications") {
                 ForEach(dateManager.getNotificationsOfEvent(id: event.id)) { notification in
-                    Text(notification.id)
+                    Text("\(notification.interval.rawValue) - \(notification.date.ISO8601Format())")
                 }
             }
         }.navigationTitle(event.name)

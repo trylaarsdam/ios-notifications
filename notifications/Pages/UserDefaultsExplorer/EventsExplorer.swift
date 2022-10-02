@@ -21,7 +21,7 @@ struct EventsExplorer: View {
                         VStack (alignment: .leading){
                             Text("\(event.name)").bold()
                             Text(event.date.ISO8601Format())
-                        }.frame(maxWidth: .infinity)
+                        }.frame(maxWidth: .infinity, alignment: .leading).multilineTextAlignment(.leading)
                     }
                 }
             }
